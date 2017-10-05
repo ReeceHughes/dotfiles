@@ -1,0 +1,55 @@
+"*":
+  core:
+    audioBeep: false
+    projectHome: "/home/reach/atomProject"
+    telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    preferredLineLength: 100
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "00bb0e15-af3c-4eba-8e21-945f55844784"
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "seti-syntax":
+    dynamicColor: false
+  "seti-ui":
+    disableAnimations: true
+    themeColor: "Steel"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+".basic.html.text":
+  editor:
+    tabLength: 2
+".css.source":
+  editor:
+    tabLength: 2
+".erb.html.text":
+  editor:
+    preferredLineLength: 80
+    tabLength: 2
+".js.regexp.replacement.source":
+  editor:
+    preferredLineLength: 80
+    tabLength: 2
+".js.regexp.source":
+  editor:
+    preferredLineLength: 80
+    tabLength: 2
+".js.source":
+  editor:
+    preferredLineLength: 80
+    tabLength: 2
+".ruby.source":
+  editor:
+    preferredLineLength: 80
+    tabLength: 2
