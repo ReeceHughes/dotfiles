@@ -40,3 +40,9 @@ for file in $files ; do
     fi
     ln -sf $dotDir/$file $HOME/$file
 done
+
+# Vim Plugins First Time Setup
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+vim +PluginInstall +qall
+
