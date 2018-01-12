@@ -4,13 +4,16 @@
 # File loaded by .bashrc on startup
 
 # ls
-alias ll='ls -alF'
-alias la='ls -lah'
-alias l='ls -CF'
-alias cla='clear && ls -la'
+alias ll='ls -alF --color=auto'
+alias la='ls -lah --color=auto'
+alias l='ls -CF --color=auto'
+alias cla='clear && ls -la --color=auto'
 
 # cd
 alias ..='cd .. && la'
+
+# rm
+alias rm='gvfs-trash'
 
 alias op='xdg-open'
 
