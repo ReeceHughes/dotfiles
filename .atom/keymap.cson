@@ -33,3 +33,4 @@
 
 'body, atom-text-editor, atom-workspace':
   'ctrl-shift-s': 'window:save-all'
+  'ctrl-[': 'vim-mode-plus:reset-normal-mode'

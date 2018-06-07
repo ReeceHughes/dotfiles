@@ -1,4 +1,7 @@
 "*":
+  "atom-ide-ui":
+    hyperclick:
+      linuxTriggerKeys: "ctrlKey,altKey"
   core:
     audioBeep: false
     projectHome: "/home/reach/atomProject"
@@ -52,4 +55,7 @@
 ".ruby.source":
   editor:
     preferredLineLength: 80
+    tabLength: 2
+".source.ts":
+  editor:
     tabLength: 2
