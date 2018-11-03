@@ -25,6 +25,7 @@ alias python='python3'
 # Git
 alias gits='git status'
 alias cgits='clear && git status'
+alias gitp='git pull'
 
 # fun
 alias timeToGoHome='python3 ~/Documents/projects/timeToGoHome/ttgh.py'

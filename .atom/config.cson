@@ -2,6 +2,8 @@
   "atom-ide-ui":
     hyperclick:
       linuxTriggerKeys: "ctrlKey,altKey"
+  "autocomplete-python":
+    useKite: false
   core:
     audioBeep: false
     projectHome: "/home/reach/atomProject"
