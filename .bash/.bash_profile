@@ -44,7 +44,8 @@ function set_git_branch {
     git_status="$(git status 2> /dev/null)"
 
     # Set color based on clean/staged/dirty.
-    if [[ ${git_status} =~ "working directory clean" ]]; then
+    status_pattern="working (directory|tree) clean"
+    if [[ ${git_status} =~ ${status_pattern} ]]; then
         state="${GREEN}"
     elif [[ ${git_status} =~ "will be committed" ]]; then
         state="${YELLOW}"
