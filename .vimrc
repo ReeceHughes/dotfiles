@@ -50,7 +50,7 @@ filetype plugin indent on    " required
 
 " Editing
 
-colorscheme seti 
+colorscheme seti
 
 set number
 set tabstop=4
