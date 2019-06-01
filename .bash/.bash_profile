@@ -100,7 +100,7 @@ function set_virtualenv () {
     if test -z "$VIRTUAL_ENV" ; then
         PYTHON_VIRTUALENV=""
     else
-        PYTHON_VIRTUALENV="${BLUE}[`basename \"$VIRTUAL_ENV\"`]${COLOR_NONE} "
+        PYTHON_VIRTUALENV="${BLUE}[`basename \"$VIRTUAL_ENV\"`]${COLOR_NONE}"
     fi
 }
 
@@ -121,7 +121,7 @@ function set_bash_prompt () {
     fi
 
     # Set the bash prompt variable.
-    PS1="${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\w\[\033[00m\]\[\033[00m\] : ${BRANCH} \n--> \[\033[01;32m\]\u@\h\[\033[00m\]\$ "
+    PS1="${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\w\[\033[00m\]\[\033[00m\] ${PYTHON_VIRTUALENV}: ${BRANCH} \n--> \[\033[01;32m\]\u@\h\[\033[00m\]\$ "
 }
 
 # Tell bash to execute this function just before displaying its prompt.

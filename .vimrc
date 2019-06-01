@@ -61,6 +61,7 @@ set autoindent
 syntax enable
 set backspace=indent,eol,start
 set scrolloff=20
+set ignorecase
 
 set shiftwidth=4
 autocmd FileType javascript,xhtml,html,scss set shiftwidth=2
