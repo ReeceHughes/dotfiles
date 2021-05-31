@@ -59,8 +59,8 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    if [ -f ~/.bash/.bash_profile ]; then
-        . ~/.bash/.bash_profile
+    if [ -f ~/.bash/.bash_prompt ]; then
+        . ~/.bash/.bash_prompt
     fi
 
 else
