@@ -1,9 +1,0 @@
-[36mCommunity Packages (4)[39m /home/reach/.atom/packages
-├── highlight-selected@0.12.0
-├── minimap@4.26.8
-├── minimap-highlight-selected@4.5.0
-└── seti-ui@1.6.1
-
-[36mGit Packages (1)[39m /home/reach/.atom/packages
-└── seti-syntax@1.1.2[90m (jesseweed/seti-syntax#fe9b3566)[39m
-

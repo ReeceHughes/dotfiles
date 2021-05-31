@@ -59,8 +59,6 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\w\[\033[00m\]\[\033[00m\] :\n--> \[\033[01;32m\]\u@\h\[\033[00m\]\$ '
     if [ -f ~/.bash/.bash_profile ]; then
         . ~/.bash/.bash_profile
     fi
@@ -79,18 +77,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -107,9 +93,6 @@ if [ -f ~/.bash/.bash_aliases ]; then
     . ~/.bash/.bash_aliases
 fi
 
-# Test for links
-alias testblash='echo it is working'
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -124,6 +107,8 @@ fi
 export EDITOR=vim
 export LC_COLLATE=C
 export PAGER="less"
+# Place Python virtual envs in the same folder as the project.
+export PIPENV_VENV_IN_PROJECT=1
 
 if [ -f ~/.bash/.startup_cmds ]; then
     . ~/.bash/.startup_cmds

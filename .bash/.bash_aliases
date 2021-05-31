@@ -12,13 +12,14 @@ alias cla='clear && ls -la --color=auto'
 # cd
 alias ..='cd .. && la'
 
-# rm
-alias rmForReal='rm'
-alias rm='gvfs-trash'
-
 # misc
 alias op='xdg-open'
 alias liveLog='less +F -R -S'
+alias local-portscan='nmap -F 192.168.1.1/24'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 
 # Programming
 alias python='python3'
@@ -31,7 +32,4 @@ alias gitp='git pull'
 branchDiff() {
     git diff $1 --stat
 }
-
-# fun
-alias timeToGoHome='python3 ~/Documents/projects/timeToGoHome/ttgh.py'
 

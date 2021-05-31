@@ -21,7 +21,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'trusktr/seti.vim'
 
 " File Navigation
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 
 " Syntax and Error Checking
 Plugin 'vim-syntastic/syntastic'
@@ -66,10 +66,12 @@ set ignorecase
 set shiftwidth=4
 autocmd FileType javascript,xhtml,html,scss set shiftwidth=2
 autocmd FileType ruby set shiftwidth=2
+autocmd FileType gitcommit set spell
+autocmd FileType markdown set spell
 
 " NERDTree
-autocmd vimenter * NERDTree | wincmd p
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd vimenter * NERDTree | wincmd p
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Syntastic Settings
 set statusline+=%#warningmsg#
@@ -80,6 +82,15 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['python']
 
+" Fix airline symbols on version 0.11+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.linenr = ' ☰  '
+" Column nmuber can also be changed if preffered.
+" let g:airline_symbols.colnr = ': '
 
 set clipboard=unnamed

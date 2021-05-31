@@ -1,3 +1,4 @@
 # Bash startup commands
 
-tmux new -s standard
+set -o vi
+
