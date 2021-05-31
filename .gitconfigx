@@ -11,3 +11,7 @@
 
 [core]
     editor = vim
+
+[diff]
+    tool = vimdiff3
+
