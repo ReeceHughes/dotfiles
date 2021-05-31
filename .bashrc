@@ -109,6 +109,8 @@ export LC_COLLATE=C
 export PAGER="less"
 # Place Python virtual envs in the same folder as the project.
 export PIPENV_VENV_IN_PROJECT=1
+export PATH=$PATH:~/.local/bin
+
 
 if [ -f ~/.bash/.startup_cmds ]; then
     . ~/.bash/.startup_cmds
