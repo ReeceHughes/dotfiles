@@ -7,7 +7,7 @@
 alias ll='ls -alF --color=auto'
 alias la='ls -lah --color=auto'
 alias l='ls -CF --color=auto'
-alias cla='clear && ls -la --color=auto'
+alias cla='clear && ls -lah --color=auto'
 
 # cd
 alias ..='cd .. && la'
