@@ -57,7 +57,7 @@ set tabstop=4
 set expandtab
 set smarttab
 set autoindent
-" set mouse=a
+set mouse=a
 syntax enable
 set backspace=indent,eol,start
 set scrolloff=20
@@ -93,4 +93,4 @@ let g:airline_symbols.linenr = ' ☰  '
 " Column nmuber can also be changed if preffered.
 " let g:airline_symbols.colnr = ': '
 
-set clipboard=unnamed
+set clipboard=unnamedplus
