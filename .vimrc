@@ -50,18 +50,29 @@ filetype plugin indent on    " required
 
 " Editing
 
+" Enable syntax hilighting
+syntax enable
+
 colorscheme seti
 
+" Show line numbers
 set number
 set tabstop=4
 set expandtab
 set smarttab
 set autoindent
+" Enable the mouse in all modes
 set mouse=a
-syntax enable
+" Fixes common backapace problems
 set backspace=indent,eol,start
+" Allows scrolling past the last line.
 set scrolloff=20
+" Ignore case in search
 set ignorecase
+" Incremental Search
+set incsearch
+" Highlight matching searches
+set hlsearch
 
 set shiftwidth=4
 autocmd FileType javascript,xhtml,html,scss set shiftwidth=2
@@ -93,4 +104,6 @@ let g:airline_symbols.linenr = ' ☰  '
 " Column nmuber can also be changed if preffered.
 " let g:airline_symbols.colnr = ': '
 
+" Set the cliboard to the system clipbboard (ctrl+c/v in other apps)
+" Should be unnamedplus for Linux, and unnamed for Mac/Windows.
 set clipboard=unnamedplus
