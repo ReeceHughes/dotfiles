@@ -27,7 +27,7 @@ Plugin 'trusktr/seti.vim'
 Plugin 'vim-syntastic/syntastic'
 
 " Git
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 
 " Airline Status Bar
 Plugin 'vim-airline/vim-airline'
