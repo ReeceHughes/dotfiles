@@ -15,3 +15,5 @@
 [diff]
     tool = vimdiff3
 
+[init]
+	defaultBranch = master
