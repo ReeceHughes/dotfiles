@@ -10,10 +10,10 @@
     ui = auto
 
 [core]
-    editor = vim
+    editor = nvim
 
 [diff]
-    tool = vimdiff3
+    tool = nvimdiff
 
 [init]
 	defaultBranch = master

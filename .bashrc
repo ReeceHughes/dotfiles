@@ -109,7 +109,7 @@ export LC_COLLATE=C
 export PAGER="less"
 # Place Python virtual envs in the same folder as the project.
 export PIPENV_VENV_IN_PROJECT=1
-export PATH=$PATH:~/.local/bin
+export PATH="$PATH:~/.local/bin:/opt/nvim-linux64/bin"
 
 
 if [ -f ~/.bash/.startup_cmds ]; then
