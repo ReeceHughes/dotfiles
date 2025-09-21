@@ -93,6 +93,11 @@ if [ -f ~/.bash/.bash_aliases ]; then
     . ~/.bash/.bash_aliases
 fi
 
+# Aliases which shouldn't be version controlled.
+if [ -f ~/.bash/.bash_temp_aliases ]; then
+    . ~/.bash/.bash_temp_aliases
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -104,12 +109,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export EDITOR=vim
+export EDITOR=nvim
 export LC_COLLATE=C
 export PAGER="less"
 # Place Python virtual envs in the same folder as the project.
 export PIPENV_VENV_IN_PROJECT=1
-export PATH="$PATH:~/.local/bin:/opt/nvim-linux64/bin"
+export PATH="$PATH:~/.local/bin:/opt/nvim-linux-x86_64/bin"
 
 
 if [ -f ~/.bash/.startup_cmds ]; then

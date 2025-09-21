@@ -2,6 +2,8 @@
 # Reece Hughes
 
 # File loaded by .bashrc on startup
+alias vim=nvim
+alias vi=/usr/bin/vim
 
 # ls
 alias ll='ls -alF --color=auto'

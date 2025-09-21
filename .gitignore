@@ -2,6 +2,8 @@
 !.vim/bundle/set.vim/colors/
 .vim/bundle/
 
+.bash/.bash_temp_aliases
+
 
 # Created by https://www.gitignore.io/api/vim,linux
 
