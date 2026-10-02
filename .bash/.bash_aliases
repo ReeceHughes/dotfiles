@@ -3,6 +3,7 @@
 
 # File loaded by .bashrc on startup
 alias vim=nvim
+alias vimdiff='nvim -d'
 alias vi=/usr/bin/vim
 
 # ls
