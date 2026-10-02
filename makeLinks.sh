@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Reece Hughes
-files=$(ls -a | grep -P '^\.(?!git)([a-zA-Z])|start-tmux.sh')
+files=$(ls -a | grep -E '^\.[a-zA-Z]|start-tmux.sh' | grep -v '^\.[Gg]it')
 dotDir=$(pwd)
 backupDir=$HOME/.dotfiles_backup
 verbose=false
